@@ -2,5 +2,5 @@ using UnityEngine;
 
 public interface ITransformComponent
 {
-    void ModeTransform();
+    Vector3 ModeTransform(Vector3 vector);
 }

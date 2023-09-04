@@ -16,12 +16,10 @@ public class TransformComponent :MonoBehaviour, IConvertGameObjectToEntity, ITra
     {
         obj = this.gameObject.transform;
     }
-    public void ModeTransform()
+    public Vector3 ModeTransform(Vector3 vector)
     {
-        Vector3 vector = new Vector3();
-        vector.z++;
-        vector.x++;
         obj.position = vector;
+        return vector;
     }
 
     public void Convert(Entity entity, EntityManager dstManager, GameObjectConversionSystem conversionSystem)
